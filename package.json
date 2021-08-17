@@ -1,0 +1,19 @@
+{
+  "name": "bootcampreactnative",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/jalilrzq/bootcampreactnative.git"
+  },
+  "author": "Abdul Jalil Rozaqi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/jalilrzq/bootcampreactnative/issues"
+  },
+  "homepage": "https://gitlab.com/jalilrzq/bootcampreactnative#readme"
+}
