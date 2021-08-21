@@ -78,7 +78,7 @@ var input = [
   ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 
-function dataHandling () {
+function dataHandling (input) {
   var text = '';
   for (var i = 0; i < (input.length); i++){
     text += 'Nomor ID: ' + input[i][0] + '\n' +
@@ -89,7 +89,7 @@ function dataHandling () {
   return text;
 }
 
-console.log(dataHandling());
+console.log(dataHandling(input));
 
 
 //Tugas No.5 Balik Kata
@@ -107,3 +107,82 @@ console.log(balikKata("Haji Ijah")) // hajI ijaH
 console.log(balikKata("racecar")) // racecar
 console.log(balikKata("I am Sanbers")) // srebnaS ma I 
 
+//Tugas No.6 Metode Array
+function dataHandling2 (input) {
+  // Memodifikasi variabel menggunakan 'splice'
+  input.splice(1, 2, 'Roman Alamsyah Elsharawy', 'Provinsi Bandar Lampung')
+  console.log (input);
+
+  // Memisahkan tanggal, bulan, dan tahun kelahiran dengan 'split' dan mengganti angka bulan dengan switch case
+  lahir = input[3].split('/');
+  var bulan = parseInt(lahir[1]);
+  switch(bulan) {
+    case 1: {
+      bulan = 'Januari'; 
+      break;
+    }
+    case 2: {
+      bulan = 'Februari'; 
+      break;
+    }
+    case 3: {
+      bulan = 'Maret'; 
+      break;
+    }
+    case 4: {
+      bulan = 'April'; 
+      break;
+    }
+    case 5: {
+      bulan = 'Mei'; 
+      break;
+    }
+    case 6: {
+      bulan = 'Juni'; 
+      break;
+    }
+    case 7: {
+      bulan = 'Juli'; 
+      break;
+    }
+    case 8: {
+      bulan = 'Agustus'; 
+      break;
+    }
+    case 9: {
+      bulan = 'September'; 
+      break;
+    }
+    case 10: {
+      bulan = 'Oktober'; 
+      break;
+    }
+    case 11: {
+      bulan = 'November'; 
+      break;
+    }
+      case 12: {
+        bulan = 'Desember'; 
+        break;
+    }
+  }
+  console.log(bulan);
+
+  
+  // Sort desending waktu kelahiran
+  lahir2 = input[3].split('/');
+  lahir2 = lahir2.sort(function(a, b){return b - a});
+  console.log(lahir2);
+
+  // Gabungkan element waktu kelahiran dengan 'join'
+  lahir3 = input[3].split('/');
+  lahir3 = lahir.join('-');
+  console.log(lahir3);
+
+  // Membatasi element Nama sebanyak 15 karakter dengan slice
+  var Nama = input[1].slice(0,15);
+  console.log(Nama);
+}
+
+var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
+dataHandling2(input);
