@@ -9,11 +9,11 @@ golden()
 
 
 // 2. Sederhanakan menjadi Object literal di ES6
-const newFunction = literal = (firstName, lastName) => {
-  return {
-    firstName,
-    lastName,
-    fullName: () => console.log(`${firstName} ${lastName}`)
+const newFunction = (firstName, lastName) => {
+  return {firstName, lastName,
+    fullName() {
+    console.log(`${firstName} ${lastName}`)
+    }
   }
 }
 
