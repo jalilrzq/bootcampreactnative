@@ -8,14 +8,26 @@ const books = [
 
 let inputTime = 10000;
 let i = 0;
-function reading(time) {
-  if (i < books.length - 1 && time > 0) {
-    if (time !== inputTime) {
-      inputTime = time;
-      i++;
-      readBooks(inputTime, books[i], reading);
-    } else console.log(`sisa waktu : ${time}`);
-  } 
+// function reading(time) {
+//   if (i < books.length - 1 && time > 0) {
+//     if (time !== inputTime) {
+//       inputTime = time;
+//       i++;
+//       readBooks(inputTime, books[i], reading);
+//     } else console.log(`sisa waktu : ${time}`);
+//   } 
+// }
+
+// readBooks(inputTime, books[i], reading);
+
+function reading() {
+  readBooks(inputTime, books[i], function(sisaWaktu) {
+    inputTime = sisaWaktu;
+    i++;
+    if (i < books.length) {
+      reading();
+    }
+  });
 }
 
-readBooks(inputTime, books[i], reading);
+reading();
