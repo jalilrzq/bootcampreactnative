@@ -2,17 +2,21 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-// import Component from './Latihan/Compoent/component';
-// import Telegram from './Tugas/Tugas12/Telegram';
+import Component from './Latihan/Compoent/component';
+import Telegram from './Tugas/Tugas12/Telegram';
 import Flexbox from './Latihan/Flexbox/flexbox';
 import Props from './Latihan/Flexbox/props';
+import Login from './Tugas/Tugas13/LoginScreen';
+import About from './Tugas/Tugas13/AboutScreen';
 
 export default function App() {
   return (
-    <>
-      <Flexbox />
-      { <Props /> }
-    </>
+    <About />
+    // <Login />
+    // <>
+    //   <Flexbox />
+    //   { <Props /> }
+    // </>
     // <Telegram />
     // <Component />
     // <View style={styles.container}>
