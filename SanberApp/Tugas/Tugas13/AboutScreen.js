@@ -1,32 +1,48 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
 
 export default class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.body}>
-          <Image style={styles.logo} source={require('./assets/Logo.png')} />
-          <Text style={styles.title}>About</Text>
-          <View style={styles.input}>
-            <Text>Username</Text>
-            <TextInput style={styles.inputText} editable maxLength={40} />
-          </View>
-          <View style={styles.input}>
-            <Text>Password</Text>
-            <TextInput style={styles.inputText} editable maxLength={40} />
-          </View>
-          <TouchableOpacity>
-            <View style={styles.buttonMasuk}>
-              <Text style={{color: 'white', fontSize: 20}}>Masuk</Text>
+        <Text style={styles.title}>Tentang Saya</Text>
+          <FontAwesome name="user-circle-o" size={48*2} color="black" />
+          <Text style={{fontSize: 24}}>Abdul Jalil Rozaqi</Text>
+          <Text style={{fontSize: 18}}>Full Stack Developer</Text>
+          <View style={styles.porto}>
+            <Text style={{fontSize: 20}}>Portofolio</Text>
+            <View style = {styles.lineStyle} />
+            <View style={styles.innerPorto}>
+              <View style={styles.item}>
+                <FontAwesome name="gitlab" size={48} color="black" />
+                <Text>@jalilrzq</Text>
+              </View>
+              <View style={styles.item}>
+                <FontAwesome name="github" size={48} color="black" />
+                <Text>@jalilrzq</Text>
+              </View>
             </View>
-          </TouchableOpacity>
-          <Text style={{textAlign: 'center', fontSize: 18, marginTop: 20}}>atau</Text>
-          <TouchableOpacity>
-            <View style={styles.buttonDaftar}>
-              <Text style={{color: '#3EC6FF', fontSize: 18}}>Daftar</Text>
+          </View>
+          <View style={styles.porto}>
+            <Text style={{fontSize: 20}}>Contact</Text>
+            <View style = {styles.lineStyle} />
+            <View style={styles.innerPorto}>
+              <View style={styles.item2}>
+              <FontAwesome name="linkedin-square" size={48} color="black" />
+                <Text>@jalilrzq</Text>
+              </View>
+              <View style={styles.item2}>
+                <FontAwesome name="github" size={48} color="black" />
+                <Text>081334567890</Text>
+              </View>
+              <View style={styles.item2}>
+                <FontAwesome name="github" size={48} color="black" />
+                <Text style={{fontSize: 12}}>abdul@gmail.com</Text>
+              </View>
             </View>
-          </TouchableOpacity>
+          </View>
         </View>
       </View>
     );
@@ -41,46 +57,35 @@ const styles = StyleSheet.create({
     body: {
     flex: 1,
     paddingHorizontal: 7,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  logo: {
-    width: 353,
-    height: 97,
+    alignItems: 'center'
   },
   title: {
     marginTop: 10,
     fontSize: 30,
-    color: '#003366'
+    color: '#000',
+    fontWeight: 600,
   },
-  input: {
-    marginTop: 9,
-    width: 277,
-  },  
-  inputText: {
-    borderColor: 'black',
-    borderWidth: 1,
-    height: 45,
-    marginTop: 10
-  },
-  buttonMasuk: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 40,
-    width: 150,
-    height: 40,
-    borderRadius: 10,
-    backgroundColor: '#003366',
-  },
-  buttonDaftar: {
-    alignItems: 'center',
-    justifyContent: 'center',
+  porto: {
     marginTop: 20,
-    width: 150,
-    height: 40,
-    borderRadius: 10,
-    backgroundColor: 'white',
-    borderColor: '#003366',
+    width: '90%',
+    backgroundColor: '#DCDCDC',
+    padding: 10,
+  },
+  lineStyle: {
     borderWidth: 1,
+    borderColor:'black',
+  },
+  innerPorto: {
+    padding: 10,
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  item: {
+    alignItems: 'center',
+    width: '50%',
+  },
+  item2: {
+    alignItems: 'center',
   }
 });
