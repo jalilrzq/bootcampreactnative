@@ -34,11 +34,11 @@ export default class Login extends Component {
                 <Text>@jalilrzq</Text>
               </View>
               <View style={styles.item2}>
-                <FontAwesome name="github" size={48} color="black" />
+                <FontAwesome name="whatsapp" size={48} color="black" />
                 <Text>081334567890</Text>
               </View>
               <View style={styles.item2}>
-                <FontAwesome name="github" size={48} color="black" />
+                <FontAwesome name="envelope-o" size={48} color="black" />
                 <Text style={{fontSize: 12}}>abdul@gmail.com</Text>
               </View>
             </View>
