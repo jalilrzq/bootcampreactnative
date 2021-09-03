@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontSize: 30,
     color: '#000',
-    fontWeight: 600,
+    fontWeight: 'bold',
   },
   porto: {
     marginTop: 20,
