@@ -8,10 +8,12 @@ import Flexbox from './Latihan/Flexbox/flexbox';
 import Props from './Latihan/Flexbox/props';
 import Login from './Tugas/Tugas13/LoginScreen';
 import About from './Tugas/Tugas13/AboutScreen';
+import RestApi from './Tugas/Tugas14/RestApi'
 
 export default function App() {
   return (
-    <About />
+    <RestApi />
+    // <About />
     // <Login />
     // <>
     //   <Flexbox />
