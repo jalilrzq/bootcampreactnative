@@ -1,18 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Settings, StyleSheet, Text, View } from 'react-native';
 
-import Component from './Latihan/Compoent/component';
-import Telegram from './Tugas/Tugas12/Telegram';
-import Flexbox from './Latihan/Flexbox/flexbox';
-import Props from './Latihan/Flexbox/props';
-import Login from './Tugas/Tugas13/LoginScreen';
-import About from './Tugas/Tugas13/AboutScreen';
-import RestApi from './Tugas/Tugas14/RestApi'
+// import Component from './Latihan/Compoent/component';
+// import Telegram from './Tugas/Tugas12/Telegram';
+// import Flexbox from './Latihan/Flexbox/flexbox';
+// import Props from './Latihan/Flexbox/props';
+// import Login from './Tugas/Tugas13/LoginScreen';
+// import About from './Tugas/Tugas13/AboutScreen';
+// import RestApi from './Tugas/Tugas14/RestApi'
+// import Login from './Tugas/Tugas15/Pages/Login';
+import Tugas15 from './Tugas/Tugas15/index';
 
 export default function App() {
   return (
-    <RestApi />
+    <Tugas15 />
+    // <Login />
+    // <RestApi />
     // <About />
     // <Login />
     // <>
