@@ -10,11 +10,17 @@ import { Settings, StyleSheet, Text, View } from 'react-native';
 // import About from './Tugas/Tugas13/AboutScreen';
 // import RestApi from './Tugas/Tugas14/RestApi'
 // import Login from './Tugas/Tugas15/Pages/Login';
-import Tugas15 from './Tugas/Tugas15/index';
+// import Tugas15 from './Tugas/Tugas15/index';
+// import QuizNo6 from './Quiz3/soalNomer6';
+// import QuizNo7 from './Quiz3/soalNomer7';
+import index from './Quiz3';
 
 export default function App() {
   return (
-    <Tugas15 />
+    <index />
+    // <QuizNo7 />
+    // <QuizNo6 />
+    // <Tugas15 />
     // <Login />
     // <RestApi />
     // <About />
