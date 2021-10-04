@@ -13,11 +13,14 @@ import { Settings, StyleSheet, Text, View } from 'react-native';
 // import Tugas15 from './Tugas/Tugas15/index';
 // import QuizNo6 from './Quiz3/soalNomer6';
 // import QuizNo7 from './Quiz3/soalNomer7';
-import index from './Quiz3';
+// import index from './Quiz3';
+// import Latihan15 from './Latihan/Latihan15/index';
+import Latihan15 from './Latihan/Latihan15/index2';
 
 export default function App() {
   return (
-    <index />
+    <Latihan15 />
+    // <index />
     // <QuizNo7 />
     // <QuizNo6 />
     // <Tugas15 />
